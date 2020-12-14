@@ -30,8 +30,6 @@ function exerciseDog(dogName, dogBreed){
     // for (let i = 0; i < routine.length; i++){
     //     array.push(routine[i](dogName, dogBreed));
     // }
-    routine.forEach(exercise => {
-        array.push(exercise(dogName, dogBreed))
-    });
+    routine.forEach(exercise => array.push(exercise(dogName, dogBreed)));
     return array;
 }
